@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,215 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Set box-sizing for all elements */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/* Create color variables */
+:root {
+  --primary: #56B4D3;
+  --secondary: #348F50;
+  --secondary-light: #348F50;;
+  --white: #fff;
+}
+
+/* Remove the body margin */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 ;
+}
+
+/* Style the button and tell it not to grow */
+button {
+  background-color: var(--primary);
+  border: 0;
+  color: var(--white);
+  flex-grow: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+}
+
+/* Add some margin on the left of any buttons
+that follow another button or an input */
+button + button,
+input + button {
+  margin-left: 2px;
+}
+
+form {
+  padding: 1rem 0;
+}
+
+/* Style the input and tell it to grow */
+input {
+  background-color: var(--secondary-light);
+  border: 2px solid var(--secondary);
+  color: var(--white);
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  width: 50%;
+}
+
+/* Set the color of the placeholder text */
+input::placeholder {
+  color: var(--white);
+}
+
+/* Change the background of the input when
+it is focused or hovered and remove its
+default outline */
+input:focus,
+input:hover {
+  background-color: var(--secondary);
+  outline: 0;
+}
+
+/* Apply flex to the form */
+.form-horizontal {
+  align-items: center;
+  display: flex;
+}
+
+/* Add a media query to add more space between
+the button and input when the browser is at least
+600px wide */
+@media (min-width: 600px) {
+  button + button,
+  input + button {
+    margin-left: 1rem;
+  }
+}
+img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  button + button,
+  input + button {
+    margin-left: 1rem;
+  }
+
+  .gallery {
+    column-count: 3;
+justify-content: space-around;
+  }
+  #select{
+    width:100%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery {
+justify-content: space-around;  }
+}
+
+@media (min-width: 1400px) {
+  .gallery {
+   justify-content: space-around;
+
+  }
+}
+
+/* Add a muted to the existing color variables in :root  */
+:root {
+  /* ... */
+  --muted: #949494;
+}
+
+h3{
+  display: flex;
+  align-items: flex-start;
+}
+
+
+p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Add a header declaration to the existing 
+media query for screen sizes of 1000px or more  */
+@media (min-width: 1000px) {
+  header {
+    align-items: center;
+    flex-direction: row;
+  }
+  /* ...  */
+}
+.brand4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  font-size: 2em;
+  padding-top: 3em;
+}
+
+.brand4 .simg {
+  height: 5rem;
+  margin: 0 0.5rem 0 0;
+  width: auto;
+}
+
+.brand4 h1 {
+  font-weight: 200;
+  letter-spacing: -1px;
+  margin-right: 1rem;
+  white-space: nowrap;
+
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form1 {
+  display: block;
+  width:20%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form1:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#uname{
+  background: whitesmoke;
+  color: black;
+}
+#password{
+  background: whitesmoke;
+  color: black;
+}
+#terms{
+  padding-top: 3.5em;
+}
+#ingredients{
+  padding: 3.5em 0;
 }
