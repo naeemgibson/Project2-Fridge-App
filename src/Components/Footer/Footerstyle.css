@@ -1,0 +1,21 @@
+footer {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  
+  footer > p {
+    margin: 1rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

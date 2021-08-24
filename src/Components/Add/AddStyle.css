@@ -1,0 +1,90 @@
+
+#survey-formy{
+    background: #348F50 ;
+    width: 50%;
+    margin:0 auto ;
+    padding-bottom: 5rem;
+}
+
+
+.container {
+    width: 50%;
+    margin: 3.125rem auto 0 auto;
+  }
+
+  .header {
+    padding: 9em 0.625rem;
+    margin-bottom: 1.875rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
+    font-weight: 400;
+    line-height: 1.4;
+    color: whitesmoke;
+    margin: 0 auto;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+ 
+    
+
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  }
+  
+  .form-control {
+    display: block;
+    margin:0 auto;
+    width: 50%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-control2 {
+    display: flex;
+    flex-direction:column;
+    margin:0 auto;
+   justify-content: center; 
+  }
+
+  .form-control3 {
+    display: block;
+    margin:0 auto;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  #image{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:0 auto;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
